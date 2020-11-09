@@ -1,0 +1,11 @@
+Try to run all of these: # From different solutions
+1. activate envs
+2. python -m ipykernel install --user
+
+3. conda install pywin32
+
+4. pip install --upgrade pywin32==225
+
+5. conda install -c conda-forge pywin32
+6. conda install -c anaconda jupyter_client
+7. conda install -c conda-forge jupyter_core

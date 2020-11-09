@@ -1,0 +1,9 @@
+1. git push updated web
+2. pythonanywhere.com
+3. j.sho*******@gmail.com pass:14
+4. Dashboard > Consoles
+5. Delete some Bash to start a new one
+6. Start a new console > Other > Bash
+7. git clone updated web repo
+8. Dashboard > Web Apps
+9. Reload web app

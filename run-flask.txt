@@ -1,0 +1,8 @@
+1. Open CMD
+2. cd D:\anaconda\Scripts\
+3. activate.bat
+4. activate pyproj
+5. cd D:\portfolio
+6. set FLASK_APP=server.py
+7. set FLASK_ENV=development
+8. flask run
