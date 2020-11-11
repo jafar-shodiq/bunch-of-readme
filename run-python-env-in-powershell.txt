@@ -1,0 +1,8 @@
+1. open CMD
+2. cd D:\anaconda\Scipts
+3. activate.bat
+4. open powershell
+5. voila!
+
+to deactivate conda from powershell: conda deactivate
+to activate again: conda activate
