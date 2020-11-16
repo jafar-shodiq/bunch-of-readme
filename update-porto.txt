@@ -4,6 +4,12 @@
 4. Dashboard > Consoles
 5. Delete some Bash to start a new one
 6. Start a new console > Other > Bash
-7. git clone updated web repo
+7. cd portfolio
+7. git pull/ git clone
 8. Dashboard > Web Apps
 9. Reload web app
+
+if the above steps does not update the web:
+1. Dashboard > Files
+2. portfolio/
+3. Manually update there
