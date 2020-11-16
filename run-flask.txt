@@ -6,3 +6,8 @@
 6. set FLASK_APP=server.py
 7. set FLASK_ENV=development
 8. flask run
+
+[from vs code or powershell]
+1. $env:FLASK_APP='server.py'
+2. $env:FLASK_ENV='development'
+3. flask run
