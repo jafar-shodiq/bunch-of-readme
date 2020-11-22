@@ -1,0 +1,5 @@
+If it doesn't work when entering password
+1. Start > Run
+2. services.msc
+3. Look for the postgresql-[version] service
+4. Start
