@@ -1,0 +1,9 @@
+1. go to github
+2. select csv file
+3. view raw
+4. copy browser link
+5.
+
+import pandas as pd
+df = pd.read_csv('https://raw.githubusercontent.com/jafar-shodiq/mlearning-proj/main/datasets/video-games-sales.csv')
+df
