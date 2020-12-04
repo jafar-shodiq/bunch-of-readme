@@ -1,6 +1,6 @@
 1. git push updated web
 2. pythonanywhere.com
-3. j.sho*******@gmail.com pass:14
+3. email:11, pass:14
 4. Dashboard > Consoles
 5. Delete some Bash to start a new one
 6. Start a new console > Other > Bash
@@ -13,3 +13,7 @@ if the above steps does not update the web:
 1. Dashboard > Files
 2. portfolio/
 3. Manually update there
+
+edit 04/12/2020: git pull does not work
+1. Delete /portfolio dir from pythonanywhere
+2. git clone
