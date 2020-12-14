@@ -1,0 +1,17 @@
+Get to EC2 instance:
+1. Email & pass
+2. Console
+3. EC2
+4. Instances
+
+
+Putty setup
+1. D:/Udemy/
+2. Run putty
+3. Category - Session
+4. Host name (txt box): ubuntu@(public IPv4 DNS)
+5. Port: 22
+6. Connection type: SSH
+7. Category - expand SSH - Auth
+8. Private key file (txt box) - browse - D:/Udemy/puttyspark.ppk
+9. Open
