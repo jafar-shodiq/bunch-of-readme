@@ -1,0 +1,24 @@
+virtual ubuntu specs
+type: linux
+version: ubuntu 64-bit
+loc: D:
+RAM: 2000mb
+File size: 20gb
+
+virtualbox list
+ myspark2: #tutorial from youtube (no jupyter notebook) https://www.youtube.com/watch?v=snZvQcI2HfQ&list=LL&index=8&ab_channel=datyrlab
+  cd /usr/local/spark/spark-3.0.1-bin-hadoop2.7/bin
+  scala->./spark-shell
+  python->./pyspark
+  testing(py):
+   mkdir -p ~/Desktop/tutorial/spark
+   cd ~/Desktop/tutorial/spark
+   vim test-spark-connection.py
+
+	#!usr/bin/python3
+	from pyspark.sql import SparkSession
+	sc = SparkSession.builder.appName('helloworld').getOrCreate()
+	print(type(sc),"/n")
+	print(dir(sc))
+
+   python3 ~/Desktop/tutorial/spark/test-spark-connection.py

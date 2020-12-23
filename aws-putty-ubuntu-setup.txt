@@ -4,7 +4,6 @@ Get to EC2 instance:
 3. EC2
 4. Instances
 
-
 Putty setup
 1. D:/Udemy/
 2. Run putty
