@@ -1,0 +1,93 @@
+python 3.8.5
+spark 3.0.1
+pyspark 3.0.1
+ubuntu 20
+openjdk 8 jre
+
+jose portilla:
+sudo apt-get update
+sudo apt install python3-pip
+pip3 install jupyter
+jupyter notebook
+	test 1+1; 1/2
+sudo apt-get install default-jre
+java -version
+sudo apt-get install scala
+scala -version
+pip3 install py4j
+->open firefox-search apache spark-most top link-download latest spark
+move file from Downloads to Home
+->open terminal again
+sudo tar -zxvf spark(tab)
+export SPARK_HOME='home/ubuntu/spark(tab)'
+export PATH=$SPARK_HOME:$PATH
+export PYTHONPATH=$SPARK_HOME/python:$PYTHONPATH
+export PYSPARK_DRIVER_PYTHON="jupyter"
+export PYSPARK_DRIVER_PYTHON_OPTS="notebook"
+export PYSPARK_PYTHON=python3
+sudo chmod 777 spark(tab)
+cd spark(tab)
+cd python
+python3
+>>>import pyspark
+cd spark(tab)
+sudo chmod 777 python
+cd python
+sudo chmod777 pyspark
+jupyter notebook
+>>>import pyspark
+
+
+from https://www.youtube.com/watch?v=snZvQcI2HfQ&list=LL&index=10&t=3s&ab_channel=datyrlab:
+firefox
+  search apache spark-most top link-download spark 3.0
+cd ~/Downloads
+tar xvzf spark(tab)
+cd
+sudo mkdir -p /usr/local/spark
+sudo mv ~/Downloads/spark(tab) /usr/local/spark
+cd /usr/local/spark
+cd
+python3 --version
+which python3
+type -a python3
+ls /usr/bin/python3*
+sudo apt-get install vim
+sudo vim ~/.bashrc
+(keyboard 'i')
+(scroll to the bottom)
+export SPARK_HOME="/usr/local/spark/spark-3.0.1-bin-hadoop2.7"
+export PATH="${PATH}:${SPARK_HOME}/bin"
+export PYSPARK_PYTHON="/usr/bin/python3"
+export PYSPARK_DRIVER_PYTHON="/usr/bin/python3"
+(keyboard 'esc')
+(type ':wq!')
+source ~/.bashrc
+echo $SPARK_HOME
+sudo apt install python3-pip
+sudo pip3 install pyspark
+pip3 freeze
+sudo apt install openjdk-8-jre
+sudo apt install openjdk-8-jdk
+java -version
+cd /usr/local/spark/spark(tab)/bin
+./spark-shell
+scala>
+./pyspark
+>>>
+cd
+mkdir -p ~/Desktop/tutorial/spark
+cd ~/Desktop/tutorial/spark
+sudo vim test-spark-connection.py
+	#!usr/bin/python3
+	from pyspark.sql import SparkSession
+	sc = SparkSession.builder.appName('helloworld').getOrCreate()
+	print(type(sc),"/n")
+	print(dir(sc))
+python3 ~/Desktop/tutorial/spark/test-spark-connection.py
+
+
+
+
+
+

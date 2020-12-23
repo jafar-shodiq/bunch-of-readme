@@ -1,0 +1,51 @@
+[VirtualBox-Pyspark-JupyterNotebook]
+
+1. Open Terminal
+2. sudo apt-get update
+3. sudo apt install vim
+4. sudo apt install python3-pip
+5. sudo pip3 install jupyter
+6. sudo pip3 install pyspark
+7. sudo apt install openjdk-8-jre
+8. sudo apt install openjdk-8-jdk
+
+9. Open Firefox
+10. search apache spark - most top link - download spark-3.0.1-bin-hadoop2.7
+11. Open Terminal
+12. cd ~/Downloads
+13. tar xvzf spark-3.0.1-bin-hadoop2.7
+14. cd
+15. sudo mkdir -p /usr/local/spark
+16. sudo mv ~/Downloads/spark-3.0.1-bin-hadoop2.7 /usr/local/spark
+17. cd /usr/local/spark
+18. cd
+
+19. sudo vim ~/.bashrc
+20. (keyboard 'i')
+21. (scroll to the bottom)
+	export SPARK_HOME="/usr/local/spark/spark-3.0.1-bin-hadoop2.7"
+	export PATH="${PATH}:${SPARK_HOME}/bin"
+	export PYSPARK_PYTHON="/usr/bin/python3"
+	export PYSPARK_DRIVER_PYTHON="/usr/bin/python3"
+22. (keyboard 'esc')
+23. (type ':wq!')
+24. source ~/.bashrc
+25. echo $SPARK_HOME
+
+26. cd /usr/local/spark/spark(tab)/bin
+27. ./spark-shell
+	scala>
+28. ./pyspark
+	>>>
+
+29. cd
+30. sudo mkdir -p ~/Desktop/tutorial/spark
+31. cd ~/Desktop/tutorial/spark
+32. sudo vim test-spark-connection.py
+	#!usr/bin/python3
+	from pyspark.sql import SparkSession
+	sc = SparkSession.builder.appName('helloworld').getOrCreate()
+	print(type(sc),"/n")
+	print(dir(sc))
+33. python3 ~/Desktop/tutorial/spark/test-spark-connection.py
+34. to open jupyter notebook: sudo jupyter notebook --allow-root
