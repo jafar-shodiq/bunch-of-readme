@@ -22,3 +22,5 @@ virtualbox list
 	print(dir(sc))
 
    python3 ~/Desktop/tutorial/spark/test-spark-connection.py
+
+myspark3: myspark2 + jupyter notebook

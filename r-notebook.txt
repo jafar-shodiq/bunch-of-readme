@@ -1,0 +1,4 @@
+1. Ctrl + Shift + Enter <- Run cell/chunk
+2. Ctrl + Alt + I <- Insert a cell/chunk below
+3. Ctrl + Shift + K <- Save as HTML for better view
+4. To add a markdown, simply type anything outside of (```{r} ```)
