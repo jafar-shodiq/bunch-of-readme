@@ -1,0 +1,44 @@
+Start
+1. Open Docker Desktop
+2. Open CMD
+3. cd ../CompreFace-master
+4. docker-decompose up -d
+5. http://localhost:8000/login
+
+
+Adding a New Face
+1. http://localhost:8000/login
+2. Login or sign up
+3. Create a new app
+4. Create a new face collection
+
+5. Download this image https://imgur.com/a/2kH1jB5
+6. Open Postman
+7. File -> new -> workspace
+8. Add a new tab [+] which will be titled 'Untitled Request'
+9. From the textbox, change GET into POST
+10. Type http://localhost:8000/api/v1/faces?subject=
+11. From the table KEY | VALUE | DESCRIPTION, add a value name to the 'subject' KEY. For example. Gordon Ramsay
+12. Head to Headers
+13. From the table KEY | VALUE | DESCRIPTION, add a key 'x-api-key' and the value is the API Key we got from creating a new face collection
+14. Head to Body
+15. From the table KEY | VALUE | DESCRIPTION, add a key 'file' with lowercase f and when we hover the mouse over it, we will see drop down 'Text'. Change it to 'File'. Add a value by uploading the downloaded picture
+16. Click 'Send'
+17. We will get something like this
+{
+    "image_id": "5a40eb77-2f7a-459c-b61c-497e072a9f1b",
+    "subject": "Gordon Ramsay"
+}
+18. Head back to http://localhost:8000/login
+19. Login
+20. From the face collection, click the three-dots and click TEST
+21. Upload a new image to predict
+
+
+Add More Faces
+1. Open Postman
+2. Go to workspaces
+3. From Params, rename (not add below) the value to a new label
+4. From Body, change the image
+5. Click 'Send'
+6. This process will add a brand new face, not replacing the existing face.
